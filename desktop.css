@@ -1,0 +1,45 @@
+@media screen and (min-width:728px) {
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab');
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+h1 {
+    text-align: center;
+}
+.owl-theme .item {
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+
+div.owl-nav {/*調整左右按鈕高度*/
+    width: 100%;
+    position: absolute; top: 35%;
+    transform: translate(50% 50%);
+}
+
+.owl-nav span {/*左右按鈕樣式設定*/
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.5rem;
+    display: block;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 1.25rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.owl-nav span:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.owl-prev,.owl-next {
+    position: absolute; 
+}
+div.owl-nav .owl-prev{/*控制左按鈕*/
+    left: 50px;
+}
+div.owl-nav .owl-next{/*控制右按鈕*/
+    right: 50px;
+}
+}

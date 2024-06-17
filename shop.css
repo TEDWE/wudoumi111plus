@@ -1,0 +1,96 @@
+*{box-sizing:border-box;}
+
+/*設定商品圖+文字大框*/
+.wrapshop{
+    display: block;
+    width: 100%;
+    /* background-color: rgb(57, 165, 142); */
+}
+/*設定商品圖*/
+.red{
+    width: 70%;
+    /* background-color: aqua; */
+}
+#redpic{
+    position: relative;
+    margin: 200px 50px;
+    /* object-position: left; */
+    width: 65%;
+    /* background-color: #000; */
+}
+
+/*設定商品文字圖*/
+.txt{
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    width:99%;
+    align-items:center;
+
+}
+/* .bottom{
+    display: block;
+    width: 100px;
+    position: relative;
+    margin:500px 900px;
+    background-color: #d5e2a3;
+} */
+/* 按鈕動畫
+.select{
+    width: 120%;
+    cursor: pointer;
+    background-color: #000;
+}*/
+
+.select:hover{
+    color: #fff;
+/* background-color: #000 */
+
+} 
+
+.wrapshop2{
+    display: flex;
+    width: 100%;
+    /* background-color: #c41919; */
+}
+.ass_txt{
+    padding-top: 60PX;
+    width: 99%;
+    position: absolute;
+}
+.ass_pic{
+    width: 40%;
+    position: relative;
+    margin: 160PX 50PX 80PX 1000PX;
+    /* background-color: #c41919; */
+}
+.rice_txt{
+    width: 99%;
+    position: absolute;
+    padding-top: 30px;
+    /* background-color: #b6a6a6; */
+}
+.rice_pic{
+    width: 45%;
+    position: relative;
+    margin: 150px 0px 100px 0px;
+    /* background-color: #000; */
+}
+.yellow_pic{
+    width: 50%;
+    position: relative; 
+    margin: 200PX 0px 200PX 800px;
+    /* background-color: #000; */
+}
+.y_txt{
+    width: 99%;
+    padding-top:30px;
+    position: absolute;
+    /* background-color: #c41919; */
+}
+.clander_pic{
+    width: 100%;
+    position: relative; 
+    margin: 180PX 0px 0PX 100px;
+    /* background-color: #c41919; */
+}

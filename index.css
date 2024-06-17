@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono&family=Roboto+Slab:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC&family=Reddit+Mono&family=Roboto+Slab:wght@300;400&display=swap') ;
+*{box-sizing:border-box;}
+
+    body{font-family:"Reddit Mono",monospace;
+        font-family: "Noto Serif TC", serif;
+        font-weight: 400;
+        font-style: normal;}
+
+    .wrap {
+        width: 100%; 
+        /* margin: 20px auto; */
+        /* padding-top: 20px; */
+        /* background-color: rgb(170, 213, 240); */
+        border-radius: 15px;
+    }
+    header {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        /* background-color: rgb(241, 146, 102); */
+    }
+    header h1 {
+        text-indent: -999px;
+        overflow: hidden;
+        width: 100px;
+        height: 100px;
+        /* background-color: rgb(210, 236, 114); */
+        
+    }
+    header h1 a {
+        margin-left: 20px;
+        display: flex;
+        object-fit: contain;
+        width: 100%; height: 100%;
+        background-image: url(img/logo.jpg);
+        background-repeat: no-repeat;/*讓背景不要重複*/
+        /* background-color: rgb(253, 139, 177); */
+    }
+    header button {
+        display: none;
+    }/*隱藏不知名按鈕*/
+    
+    /*設定選單按鈕*/
+    header ul {
+        margin: 0; 
+        list-style: none;/*取消虛華的列表點點樣式*/
+        display: flex;
+        gap: 20px;
+        padding-top: 70px;/*設定選單外框上方空間*/
+        padding-right: 600px;
+        /* background-color: rgb(113, 136, 241); */
+        
+    }
+    header ul a {
+        color: var(--main-color);
+        text-decoration: none; /*清除超連結預設的底線*/
+        text-align: center;
+        font-size: 20px;
+        line-height: 20px;
+        display: block; /*把超連結轉成區塊，才能設定寬高或邊距*/
+        width: 150px; height: 40px; /*設定選單長寬*/
+        /* border-radius: 15px; */
+        /* background-color:beige; */
+        transition: 0.5s;/*設定0.2秒的漸變效果*/
+        padding-top: 10px;  
+        border-right: 1px solid black;
+    }
+    header ul a:first-child {
+        border-left: 1px solid black;  
+    }
+
+    /*header ul a:hover {
+        color: rgb(134, 133, 131);
+         background-color: rgba(144, 119, 247, 0.382); 
+    }*/
+
+
+    header ul a {
+        position: relative; z-index: 10;/*設定參考基準位置*/}
+        header ul a:after{ /*移上去之前*/
+        position: absolute; bottom: 0px; left:0px; /*設定線條位置*/
+        width: 100%; height: 0px; /*將高度設定為0*/
+        background-color: #dbdbdb46; content: '';
+        transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.2); z-index: -10;/*設定漸變效果*/
+    }
+    header ul a:hover:after{ /*移上去之後*/
+        height:100%; /*將高度設定為100%*/
+    }
+
+    /*主視覺動畫設定start*/
+    .maincard {
+        display: block;
+        background-image: url(img/mainbg0.jpg);
+        background-size: cover;
+        margin: 0;
+        width: 1890px;
+        height: 1000px;
+        overflow: hidden; 
+        /* box-shadow: 0 0 4px rgba(0, 0, 0, 0.20); */
+        /* background-color: rgb(181, 167, 167); */
+        /* padding-top: 20px; */
+        opacity: 100%;
+        position: absolute;
+    }
+    .bg1{
+        display: block;
+        position: absolute;
+        width: 100%;
+        animation: ease-in test 2s;
+        
+    }
+    @keyframes test{
+        0%{opacity: 0;}
+        50%{opacity: 0;}
+        100%{opacity: 1;}
+        }
+    
+    /*五斗米主角群組*/
+    .bg2{
+        display: block;
+        position: absolute;
+        width: 100%;
+        animation:ease-in test1 4s;
+    }
+    @keyframes test1{
+        0%{opacity: 0;
+            transform: translateY(50px)
+        }
+        50%{opacity: 0;}
+        80%{opacity: 0.8;}
+        100%{opacity: 1;}
+        
+    }
+
+    /*配角群組*/
+    .bg3{
+        display: block;
+        position: absolute;
+        width: 100%;
+        animation:ease-in test3 1s;
+    }
+    @keyframes test3{
+        0%{opacity: 0;}
+        50%{opacity: 0;}
+        100%{opacity: 1;}
+    }
+    /*主視覺動畫設定END*/
+
+    img{
+
+        width: 100%;
+    }
+    
+    footer
+     {
+        background-color: rgb(243, 220, 193, 0.103);
+        border-radius: 15px;
+        display: flex;
+        position: relative; 
+        margin-top: 1020px;
+
+    }
+    .IG{
+        /* background-color: aqua; */
+        width: 70px;
+        position: absolute; 
+        margin: 0px 0px 0px 1800px;
+    }
+    footer section
+     {
+        /* position: relative;  */
+        line-height: 10px;  
+        /* white-space: nowrap; */
+
+    } 

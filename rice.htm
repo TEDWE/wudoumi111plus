@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五斗米</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="mobil.css">
+    <!-- owl.carousel -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"></link>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"></link>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <h1>  <a href="index.htm" title="五斗米">五斗米</a></h1>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.htm" title="五斗米">首頁</a></li>
+                    <li><a href="About.htm" title="About Us">關於我們</a></li>
+                    <li><a href="rice.htm" title="">五斗米</a></li>
+                    <li><a href="shop.htm" title="Shop">周邊商品</a></li>
+                    <!-- <li><a href="#" title="Contact Us">更多五斗米</a></li> -->
+                </ul>
+                <button class="nav-button"><img src="image/img_menu.svg" alt=""></button>
+            </nav>
+        </header>
+    </div>
+    
+    <div class="owl-carousel owl-theme">
+        <picture class="item">
+            <source media="(min-width:728px)" srcset="img/rice/1.png">
+            <source media="(max-width:728px)" srcset="img/rice/1_1.png">
+            <img src="img/rice/1.png" alt="">
+        </picture>
+        <picture class="item">
+            <source media="(min-width:728px)" srcset="img/rice/2.png">
+            <source media="(max-width:728px)" srcset="img/rice/2_1.png">
+            <img src="img/rice/2.png" alt="">
+        </picture>
+        <picture class="item">
+            <source media="(min-width:728px)" srcset="img/rice/3.png">
+            <source media="(max-width:728px)" srcset="img/rice/3_1.png">
+            <img src="img/rice/3.png" alt="">
+        </picture>
+        <picture class="item">
+            <source media="(min-width:728px)" srcset="img/rice/4.png">
+            <source media="(max-width:728px)" srcset="img/rice/4_1.png">
+            <img src="img/rice/4.png" alt="">
+        </picture>
+        <picture class="item">
+            <source media="(min-width:728px)" srcset="img/rice/5.png">
+            <source media="(max-width:728px)" srcset="img/rice/5_1.png">
+            <img src="img/rice/5.png" alt="">
+        </picture>
+      </div>
+
+<script>
+      $(".owl-carousel").owlCarousel({
+        items: 1,
+        margin: 30, // 外距 10px
+        nav:true, //設定左右控制按鈕 true, false
+        dots:false, //設定左右控制按鈕 true, false
+        center: true,//設定圖片置中
+      });
+
+</script>
+</body>
+</html>

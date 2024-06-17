@@ -1,0 +1,119 @@
+@media screen and (max-width:728px) {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab');
+    .wrap {
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        /* margin: 20px auto; */
+        /* padding-top: 20px; */
+        /* background-color: rgb(170, 213, 240);  */
+    }
+    /*header框*/
+    header {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-between;
+        margin-bottom: 10px;
+        /* background-color: rgb(241, 146, 102);  */
+    }
+    /*LOGO框*/
+    header h1 {
+        text-indent: -999px;
+        overflow: hidden;
+        width: 100%;
+        /* background-color: rgb(210, 236, 114); */
+    }
+    /*LOGO*/
+    header h1 a {
+        margin-left: 200px;
+        display: flex;
+        object-fit: contain;
+        width: 100%; 
+        background-image: url(img/logo.jpg);
+        background-repeat: no-repeat;/*讓背景不要重複*/
+        /* background-color: rgb(253, 139, 177);  */
+    }
+    header button {
+        display: none;
+    }/*隱藏不知名按鈕*/
+    
+    /*設定選單按鈕*/
+    header ul {
+        width: 100%;
+        margin: 0; 
+        list-style: none;/*取消虛華的列表點點樣式*/
+        display: flex;
+        flex-direction: column;
+        padding-top: 0px;/*設定選單外框上方空間*/
+        padding-right: 20px;
+        /* background-color: rgb(113, 136, 241);  */
+    }
+    header ul a {
+        color: var(--main-color);
+        text-decoration: none; /*清除超連結預設的底線*/
+        text-align: center;
+        font-size: 20px;
+        line-height: 20px;
+        display: flex; /*把超連結轉成區塊，才能設定寬高或邊距*/
+        flex-direction: column;
+        width: 100%;  /*設定選單長寬*/
+        border-radius: 15px; 
+        background-color:beige;
+        transition: 0.5s;/*設定0.2秒的漸變效果*/
+        padding-top: 10px; 
+        /* background-color: rgb(119, 236, 96);   */
+        border: 0px ;
+    }
+    header ul a:first-child {
+        border-left: 0px;  
+    }
+    header ul a:hover {
+        color: rgb(90, 78, 24);
+        background-color: rgba(144, 119, 247, 0.382);
+    }
+    body {
+        font-family: 'Roboto Slab', serif;
+    }
+    /* h1 {
+        text-align: center;
+    } */
+    .owl-theme .item {
+        display: block;
+        width: 70%;
+        margin: auto;
+    }
+    
+    div.owl-nav {/*調整左右按鈕高度*/
+        width: 100%;
+        position: absolute; top: 40%;
+        margin-left: -15px;
+        padding-right: 490px;
+        transform: translate(50% 50%);
+    }
+    
+    .owl-nav span {/*左右按鈕樣式設定*/
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+        line-height: 2.5rem;
+        display: block;
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 1.25rem;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .owl-nav span:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .owl-prev,.owl-next {
+        position: absolute; 
+    }
+    div.owl-nav .owl-prev{/*控制左按鈕*/
+        left: 50px;
+    }
+    div.owl-nav .owl-next{/*控制右按鈕*/
+        right: 50px;
+    }
+    }
